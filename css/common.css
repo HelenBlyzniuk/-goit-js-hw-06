@@ -11,6 +11,8 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  width:1200px;
+  margin:0 auto;
 }
 
 input {
@@ -21,4 +23,22 @@ input {
 button {
   padding: 8px 12px;
   cursor: pointer;
+}
+
+.gallery-img{
+  width:320px;
+  height: 200px;
+  margin: 0 auto;
+  
+}
+
+.gallery{
+  display:flex;
+  gap:30px;
+  padding:0;
+}
+.gallery-item{
+
+  width:370px;
+  list-style: none;
 }
