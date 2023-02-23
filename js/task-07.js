@@ -5,12 +5,19 @@ const spanEl = document.querySelector('#text');
 
 inputEl.addEventListener('input', changeFontSize);
 
-let fontSize = inputEl.getAttribute('min');
-console.log(fontSize);
+
+let fontMinSize = parseInt(inputEl.getAttribute('min'));
+
+
+
 
 function changeFontSize(event) {
-    fontSize += 1;
-    console.log(fontSize);
-    spanEl.style.fontSize = fontSize;
+    
+    fontMinSize += 1;
+    console.log(fontMinSize);
+    spanEl.style.fontSize = `${fontMinSize} px`;
+    console.log(spanEl);
+    // console.log(event.currentTarget.style.fontSize = '24px');
+    
 
 }
